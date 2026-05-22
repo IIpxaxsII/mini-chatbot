@@ -6,7 +6,9 @@ embed_model = SentenceTransformer(
 )
 
 embeddings = embed_model.encode(
-    "hello i am paras, dealing with embeddings"
+    # "hello i am paras, dealing with embeddings"
+    # "love cat", 
+    "cat"
 )
 
 print(embeddings)

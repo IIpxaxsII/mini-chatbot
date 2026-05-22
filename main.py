@@ -4,7 +4,7 @@ from transformers import AutoTokenizer
 # tokenizer = AutoTokenizer.from_pretrained("microsoft/phi-2")
 
 # tokens = tokenizer(
-#     "heloo this is unbelieveable and comfortable"
+#     "helllo this is unbelieveable and comfortable"
 # )
 
 # print(tokens)
@@ -28,7 +28,7 @@ response2 = chatbot(
     temperature = 1.7
 )
 
-print(response1[0]["generated_text"])
+print("response1: ", response1[0]["generated_text"])
 print(response2[0]["generated_text"])
 
 
