@@ -1,0 +1,37 @@
+Transformers are deep learning architectures designed to process sequential data using attention mechanisms instead of recurrence.
+
+The key innovation of transformers is self-attention. Self-attention allows every token in a sentence to interact with every other token. This helps the model understand contextual relationships between words.
+
+Large Language Models, also called LLMs, are built using transformer architectures. These models predict the next token in a sequence based on previously seen tokens.
+
+Embeddings are numerical vector representations of text. Embeddings convert semantic meaning into high-dimensional vectors so that similar meanings become geometrically close in vector space.
+
+Semantic similarity is commonly measured using cosine similarity. Cosine similarity compares the angle between two vectors instead of comparing exact words.
+
+Retrieval-Augmented Generation, also known as RAG, combines retrieval systems with language models. Instead of relying only on the knowledge stored inside model weights, RAG systems retrieve external information dynamically before generating responses.
+
+Chunking is an important part of RAG systems. Large documents are divided into smaller semantic units called chunks. Proper chunking improves retrieval precision and reduces irrelevant context.
+
+Vector databases are specialized systems designed to store and search embeddings efficiently. They perform semantic search by retrieving vectors that are geometrically close to a query vector.
+
+Approximate Nearest Neighbor search, also called ANN search, improves retrieval speed by avoiding brute-force comparison against every stored vector.
+
+FAISS is a vector similarity search library developed by Meta. It is commonly used in semantic search and retrieval pipelines.
+
+Reranking is a second-stage retrieval process used after vector search. A reranker evaluates retrieved chunks more precisely and selects the most relevant information for the language model.
+
+Modern AI systems often combine embeddings, vector databases, retrieval pipelines, reranking, and large language models into a complete retrieval architecture.
+
+Memory systems in AI agents are often built using semantic retrieval. Past conversations or documents are embedded into vector space and retrieved later based on semantic similarity.
+
+Context windows define the maximum number of tokens a language model can process at once. Efficient retrieval systems help maximize useful information within limited context windows.
+
+Inference is the process of running a trained model to generate predictions or responses. In production AI systems, inference latency is extremely important because users expect fast responses.
+
+Prompt engineering is the practice of designing prompts that guide model behavior effectively. Well-structured prompts can significantly improve output quality.
+
+Temperature controls randomness during token generation. Lower temperatures produce more deterministic outputs, while higher temperatures increase creativity and diversity.
+
+Top-p sampling is a decoding strategy where the model selects tokens from a dynamically filtered probability distribution. This helps balance coherence and creativity during generation.
+
+cycle is used to drive without fuel. it was invented by dont know whom, but this illogical lines are being written by me- devparas.

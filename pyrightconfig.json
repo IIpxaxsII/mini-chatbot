@@ -1,0 +1,8 @@
+{
+  "include": ["."],
+  "exclude": ["venv", "**/__pycache__", "chunks", "vector_store"],
+  "venvPath": ".",
+  "venv": "venv",
+  "stubPath": "typings",
+  "pythonVersion": "3.13"
+}

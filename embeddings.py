@@ -1,14 +1,13 @@
 from sentence_transformers import SentenceTransformer
 
-embed_model = SentenceTransformer(
-        "all-MiniLM-L6-v2"
+# Load the embedding model once
+embed_model = SentenceTransformer("all-MiniLM-L6-v2")
 
-)
 
-embeddings = embed_model.encode(
-    # "hello i am paras, dealing with embeddings"
-    # "love cat", 
-    "cat"
-)
-
-print(embeddings)
+def get_embeddings(text_chunks: list[str]):
+    """
+    Convert a list of text chunks into embedding vectors.
+    Each chunk becomes one semantic vector.
+    """
+    embeddings = embed_model.encode(text_chunks)
+    return embeddings

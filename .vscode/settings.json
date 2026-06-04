@@ -1,0 +1,10 @@
+{
+  "cSpell.words": ["faiss", "FAISS"],
+  "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
+  "python.analysis.stubPath": "typings",
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/venv/Lib/site-packages"
+  ],
+  "python-envs.pythonProjects": []
+}
